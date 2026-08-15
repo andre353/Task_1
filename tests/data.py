@@ -1,3 +1,6 @@
+from praktikum.ingredient_types import INGREDIENT_TYPE_SAUCE, INGREDIENT_TYPE_FILLING
+
+
 # Данные для параметризации тестов булочки (Bun)
 BUN_NAMES = ["Бриошь", "Булочка с кунжутом", "Black Bun"]
 BUN_PRICES = [201.50, 100, 0.0]
@@ -17,3 +20,14 @@ BURGER_RECEIPT_DATA = [
     ("black bun", 100.0, "SAUCE", "chili sauce", 50.0, "250.0"),
     ("white bun", 150.0, "FILLING", "cutlet", 120.0, "420.0")
 ]
+
+# Данные для параметризации тестов класса Ingredients
+INGREDIENT_INIT_DATA = [
+    ("SAUCE", "chili sauce", 100.0),
+    ("FILLING", "cutlet", 200.50),
+    ("FILLING", "dino cutlet", 0.0)
+]
+
+INGREDIENT_TYPES = [INGREDIENT_TYPE_SAUCE, INGREDIENT_TYPE_FILLING]
+INGREDIENT_NAMES = ["chili sauce", "cutlet", "dino cutlet"]
+INGREDIENT_PRICES = [100.0, 200.50, 0.0]
