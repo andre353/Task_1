@@ -31,3 +31,14 @@ INGREDIENT_INIT_DATA = [
 INGREDIENT_TYPES = [INGREDIENT_TYPE_SAUCE, INGREDIENT_TYPE_FILLING]
 INGREDIENT_NAMES = ["chili sauce", "cutlet", "dino cutlet"]
 INGREDIENT_PRICES = [100.0, 200.50, 0.0]
+
+EXPECTED_BUNS_COUNT = 3
+EXPECTED_INGREDIENTS_COUNT = 6
+
+# Данные первой булки для выборочной проверки
+FIRST_BUN_NAME = "black bun"
+FIRST_BUN_PRICE = 100
+
+# Данные первого ингредиента для выборочной проверки
+FIRST_ING_NAME = "hot sauce"
+FIRST_ING_PRICE = 100

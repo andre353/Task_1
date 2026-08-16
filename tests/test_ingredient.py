@@ -9,6 +9,7 @@ DEFAULT_TYPE = INGREDIENT_TYPE_SAUCE
 DEFAULT_NAME = "test_ingredient"
 DEFAULT_PRICE = 50.0
 
+
 class TestIngredient:
 
     # Тестируем независимость инициализации
