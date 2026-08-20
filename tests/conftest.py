@@ -2,6 +2,7 @@ import pytest
 from praktikum.burger import Burger
 from praktikum.database import Database
 
+
 @pytest.fixture
 def burger():
     """Фикстура возвращает объект бургера перед каждым тестом"""
