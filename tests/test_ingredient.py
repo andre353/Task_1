@@ -1,13 +1,7 @@
 import pytest
 from praktikum.ingredient import Ingredient
 from praktikum.ingredient_types import INGREDIENT_TYPE_SAUCE 
-from tests.data import INGREDIENT_INIT_DATA, INGREDIENT_TYPES, INGREDIENT_NAMES, INGREDIENT_PRICES
-
-
-# Базовые значения-заглушки для изоляции тестов методов
-DEFAULT_TYPE = INGREDIENT_TYPE_SAUCE
-DEFAULT_NAME = "test_ingredient"
-DEFAULT_PRICE = 50.0
+from data import INGREDIENT_INIT_DATA, INGREDIENT_TYPES, INGREDIENT_NAMES, INGREDIENT_PRICES, DEFAULT_NAME, DEFAULT_PRICE
 
 
 class TestIngredient:
@@ -25,10 +19,12 @@ class TestIngredient:
 
     @pytest.mark.parametrize("name", INGREDIENT_NAMES)
     def test_ingredient_get_name_returns_correct_value(self, name):
+        DEFAULT_TYPE = INGREDIENT_TYPE_SAUCE
         ingredient = Ingredient(DEFAULT_TYPE, name, DEFAULT_PRICE)
         assert ingredient.get_name() == name
 
     @pytest.mark.parametrize("price", INGREDIENT_PRICES)
     def test_ingredient_get_price_returns_correct_value(self, price):
+        DEFAULT_TYPE = INGREDIENT_TYPE_SAUCE
         ingredient = Ingredient(DEFAULT_TYPE, DEFAULT_NAME, price)
         assert ingredient.get_price() == price

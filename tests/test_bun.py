@@ -1,11 +1,6 @@
 import pytest
 from praktikum.bun import Bun
-from tests.data import BUN_NAMES, BUN_PRICES
-
-
-# Базовые значения для тестов, где этот параметр не является целевым
-DEFAULT_NAME = "Дефолтная булка"
-DEFAULT_PRICE = 150.0
+from data import BUN_NAMES, BUN_PRICES, DEFAULT_PRICE, DEFAULT_NAME
 
 
 class TestBun:

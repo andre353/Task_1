@@ -1,5 +1,5 @@
 import pytest
-from tests.data import (
+from data import (
     EXPECTED_BUNS_COUNT,
     EXPECTED_INGREDIENTS_COUNT,
     FIRST_BUN_NAME,

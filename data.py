@@ -1,6 +1,10 @@
 from praktikum.ingredient_types import INGREDIENT_TYPE_SAUCE, INGREDIENT_TYPE_FILLING
 
 
+DEFAULT_NAME = "Тестовое название"
+DEFAULT_PRICE = 150.0
+
+
 # Данные для параметризации тестов булочки (Bun)
 BUN_NAMES = ["Бриошь", "Булочка с кунжутом", "Black Bun"]
 BUN_PRICES = [201.50, 100, 0.0]

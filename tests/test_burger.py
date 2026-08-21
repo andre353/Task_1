@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import Mock
-from tests.data import BURGER_PRICE_DATA, BURGER_RECEIPT_DATA
+from data import BURGER_PRICE_DATA, BURGER_RECEIPT_DATA
 
 
 class TestBurger:
